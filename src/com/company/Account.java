@@ -2,17 +2,13 @@ package com.company;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-/**
- *
- * @author Daniel , Diego
- */
 public class Account implements IAccount {
     private int accountNumber;
 	private double balance;
 	private int owner;
 	private static int counter = 1;
 	private ArrayList<Transaction> transactions = new ArrayList<>();
-        //@RR
+    
 	protected String type;
         
         private static final DecimalFormat df = new DecimalFormat("#,###,##0.00");
@@ -28,12 +24,12 @@ public class Account implements IAccount {
 		return this.balance;
 	}
 
-        //@RR
+
 	public String getType() {
 		return this.type;
 	}
 
-        //@RR
+  
 	public void setType(String accountType) {
 		this.type = accountType;
 	}
@@ -65,13 +61,12 @@ public class Account implements IAccount {
 	public void displayAllTransactions() {
 		for (Transaction t : transactions) {
 
-                    //@RR
+           
                     System.out.println(t);
 		}
 
 	}
-        
-        //@RR
+    
         public String toString(){
             return type + "(" + accountNumber + ")" + df.format(balance) + "$";
         }
