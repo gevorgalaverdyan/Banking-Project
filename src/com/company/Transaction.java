@@ -2,10 +2,7 @@ package com.company;
 import java.text.DecimalFormat;
 
 
-/**
- *
- * @author Diego
- */
+
 public class Transaction implements ITransaction{
      public double amount;
 	public String type;
