@@ -3,10 +3,6 @@ package com.company;
 import java.util.ArrayList;
 
 
-/**
- *
- * @author Daniel , Gevorg
- */
 public class Bank implements  IBank {
     private String bankNumber;
 	private String address;
@@ -20,7 +16,7 @@ public class Bank implements  IBank {
 
 	public void displayClientAccounts(int clientId) {
 		Client cl = getClient(clientId);
-                //@RR
+
                 cl.displayAccounts();
 	}
 
@@ -54,7 +50,7 @@ public class Bank implements  IBank {
 		Account account = null;
 
 		Client cl = getClient(clientId);
-                   //@RR
+   
                 cl.getAccount(accountNumber);
 
 		return account;
