@@ -3,10 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *
- * @author Daniel 
- */
+
 public class Client implements IClient{
     private static int counter = 1;
 	private int id;
@@ -32,8 +29,6 @@ public class Client implements IClient{
                 System.out.println(this);
 
 		for (Account a : accountList) {
-//			System.out.println(a.type + "(" + a.accountNumber + "): " + a.getBalance() + "$");
-                    //@RR
                     System.out.println(a);
 
 		}
