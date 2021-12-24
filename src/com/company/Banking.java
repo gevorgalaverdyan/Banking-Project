@@ -1,23 +1,16 @@
 package com.company;
 
 
-/**
- *
- * @author Diego, Gevorg, Daniel
- */
 public class Banking {
     private static final String HORIZ_LINE = "-----------------------------------------------------";
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
        getInput();
     }
     public static void getInput() {
 
 		openMenu();
-		// Scanner optionScanner = new Scanner(System.in);
 		Bank myBank = new Bank();
 		UserInputManager uim = new UserInputManager();
 		
@@ -104,7 +97,6 @@ public class Banking {
 				myBank.displayClientList();
                                 openMenu();
                                 
-				// getInput();
 				break;
 
 			case 7:
@@ -128,8 +120,7 @@ public class Banking {
 
 				printMsg("Wrong choice please enter a valid coice");
                                 openMenu();
-				
-				// getInput();
+
 				break;
 			}
 		}
