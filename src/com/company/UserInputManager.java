@@ -1,10 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-/**
- *
- * @author Gevorg
- */
+
 public class UserInputManager implements IUserInputManager {
     Scanner sc = new Scanner(System.in);
 
@@ -56,7 +53,7 @@ public class UserInputManager implements IUserInputManager {
 	}
 
 
-        // author Daniel
+     
 	public Client retrieveClientInfo() {
 		System.out.print("Please enter Client first name: ");
 		String fn = sc.next();
@@ -95,7 +92,7 @@ public class UserInputManager implements IUserInputManager {
 	}
 
 	
-	// author Daniel
+
 	private boolean validateInput(String s) {
 		char[] a = s.toCharArray();
 		boolean isNumber = true;
